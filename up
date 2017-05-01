@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Setup preferences (requires restart)
+./preferences
+
+# Install applications
+./install
+
