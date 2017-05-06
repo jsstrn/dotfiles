@@ -20,17 +20,38 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # Menu bar: show battery percentage
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
-# Finder: show status and path bar
-defaults write com.apple.finder ShowPathbar -bool true
+# Dock: place dock on the left
+defaults write com.apple.Dock orientation -string "left"
+
+# Finder: show status bar
 defaults write com.apple.finder ShowStatusBar -bool true
+
+# Finder: show path bar
+defaults write com.apple.finder ShowPathbar -bool true
 
 # Trackpad: set three-finger drag
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
 
-# Hot corner: activate screensaver for bottom-left hot corner
+# Hot corner values:
+#  0: no-op
+#  2: Mission Control
+#  3: Show application windows
+#  4: Desktop
+#  5: Start screen saver
+#  6: Disable screen saver
+#  7: Dashboard
+# 10: Put display to sleep
+# 11: Launchpad
+# 12: Notification Center
+
+# Hot corner: bottom left screen corner → start screensaver
 defaults write com.apple.dock wvous-bl-corner -int 5
 defaults write com.apple.dock wvous-bl-modifier -int 0
+
+# Hot corner: top right screen corner → Desktop
+defaults write com.apple.dock wvous-tr-corner -int 4
+defaults write com.apple.dock wvous-tr-modifier -int 0
 
 # Screensaver: require password immediately after sleep or screensaver
 defaults write com.apple.screensaver askForPassword -int 1
