@@ -23,6 +23,9 @@ defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 # Dock: place dock on the left
 defaults write com.apple.Dock orientation -string "left"
 
+# Dock: automatically hide the dock
+defaults write com.apple.dock autohide -bool true
+
 # Finder: show status bar
 defaults write com.apple.finder ShowStatusBar -bool true
 
@@ -32,18 +35,6 @@ defaults write com.apple.finder ShowPathbar -bool true
 # Trackpad: set three-finger drag
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
-
-# Hot corner values:
-#  0: no-op
-#  2: Mission Control
-#  3: Show application windows
-#  4: Desktop
-#  5: Start screen saver
-#  6: Disable screen saver
-#  7: Dashboard
-# 10: Put display to sleep
-# 11: Launchpad
-# 12: Notification Center
 
 # Hot corner: bottom left screen corner → start screensaver
 defaults write com.apple.dock wvous-bl-corner -int 5
