@@ -6,3 +6,11 @@
 # Install applications
 ./install
 
+echo 'Would you like to restart the computer to allow your new preferences to take effect?'
+
+select option in "Yes" "No"; do
+    case $option in
+        Yes ) sudo shutdown -r now; break;;
+        No  ) echo "Okay, captain! You're all set up and ready to go!"; exit;;
+    esac
+done
