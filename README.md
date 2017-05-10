@@ -10,7 +10,6 @@ On a fresh Mac, open Terminal
 git clone https://github.com/jsstrn/dotfiles.git
 ```
 
-
 Run the script
 
 ```
