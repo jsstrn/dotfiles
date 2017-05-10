@@ -14,4 +14,4 @@ brew doctor || exit $?
 brew tap 'homebrew/bundle'
 
 # Run Homebrew Bundle (installs items in Brewfile)
-brew bundle
+brew bundle check || brew bundle install
