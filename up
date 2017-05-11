@@ -1,15 +1,12 @@
 #!/bin/bash
 
-# Setup preferences (requires restart)
-./preferences
+# Setup preferences for macOS (requires restart)
+./macos.sh
 
 # Install applications
-./install
+./install.sh
 
 echo "Done! You're all set up and ready to go. You may need to restart your computer"
 
-read -rp 'Would you like to restart the computer now? [y/N]' response
-
-if [[ $response =~ (yes|y|Y) ]];then
-	sudo shutdown -r now;
-fi
+# Prompt user to restart computer
+./restart.sh
