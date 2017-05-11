@@ -1,13 +1,13 @@
 #!/bin/bash
 
+# Run Stow
+ls -d */ | xargs stow
+
 # Setup preferences for macOS (requires restart)
 ./macos.sh
 
 # Install applications
 ./install.sh
-
-# Run Stow
-ls -d */ | xargs stow
 
 echo "Done! You're all set up and ready to go. You may need to restart your computer"
 
