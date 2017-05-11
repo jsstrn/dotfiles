@@ -6,6 +6,9 @@
 # Install applications
 ./install.sh
 
+# Run Stow
+ls -d */ | xargs stow
+
 echo "Done! You're all set up and ready to go. You may need to restart your computer"
 
 # Prompt user to restart computer
