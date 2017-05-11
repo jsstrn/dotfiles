@@ -17,21 +17,6 @@ cd dotfiles/
 ./up
 ```
 
-Restart your Mac to apply changes in preferences with 
-
-```
-sudo shutdown -r now
-```
-
-## what it does
-
-- `./up` runs `./preferences` and `./install`
-- `./preferences` sets up Mac's preferences
-- `./install` installs
-	- Xcode Command-Line Tools
-	- Homebrew and Homebrew Bundle, then
-	- runs `brew bundle` to install everything in the Brewfile
-
 ## thanks
 
 The popular [dotfiles](https://dotfiles.github.io) do a lot and instead of just forking them, I wanted to write my own simplified dotfiles. 
