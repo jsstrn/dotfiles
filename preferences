@@ -36,7 +36,7 @@ defaults write com.apple.finder ShowStatusBar -bool true
 defaults write com.apple.finder ShowPathbar -bool true
 
 # Finder: keep folders on top when sorting by name
-defaults write com.apple.finder _FXSortFoldersFirst -bool true;ok
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
 
 # Trackpad: set three-finger drag
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
