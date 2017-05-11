@@ -4,6 +4,8 @@ tap 'caskroom/cask'
 tap 'caskroom/fonts'
 
 brew 'mas'
+brew 'node'
+brew 'python'
 brew 'youtube-dl'
 
 cask 'alfred'
