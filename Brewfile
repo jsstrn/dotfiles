@@ -4,6 +4,7 @@ tap 'caskroom/cask'
 tap 'caskroom/fonts'
 
 brew 'git'
+brew 'mackup'
 brew 'mas'
 brew 'node'
 brew 'python'
