@@ -1,6 +1,4 @@
-.DS\_Store
-*.sw?
+.DS_Store
+.idea
 *.sublime-workspace
-.lein-repl-history
-.nrepl-port
 node_modules
