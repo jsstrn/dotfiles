@@ -22,6 +22,32 @@ Run the script
 ./up
 ```
 
+## set up
+
+### Brewfile
+
+If you want to generate a Brewfile, run the following command
+
+```
+brew bundle dump
+```
+
+Add `--force` if you want to overwrite a existing Brewfile
+
+### Mackup
+
+To back up with Mackup, run
+
+```
+mackup backup
+```
+
+To restore from a previous Mackup backup, run
+
+```
+mackup backup
+```
+
 ## thanks
 
 The popular [dotfiles](https://dotfiles.github.io) do a lot and instead of just forking them, I wanted to write my own simplified dotfiles.
