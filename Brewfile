@@ -14,6 +14,7 @@ brew 'tree'
 brew 'vim'
 brew 'wget'
 brew 'youtube-dl'
+brew 'z'
 
 cask 'appcleaner'
 cask 'atom'
