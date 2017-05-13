@@ -29,6 +29,12 @@ defaults write com.apple.Dock orientation -string "left"
 # Dock: automatically hide the dock
 defaults write com.apple.dock autohide -bool true
 
+# Dock: hidden applications appear as faint icons in the dock
+defaults write com.apple.Dock showhidden -bool true
+
+# Dock: kill the dock to apply changes
+killall Dock
+
 # Finder: show status bar
 defaults write com.apple.finder ShowStatusBar -bool true
 
