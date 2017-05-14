@@ -60,6 +60,9 @@ defaults write com.apple.finder _FXSortFoldersFirst -bool true
 defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
+# Trackpad: set a reasonably fast trackpad speed
+defaults write -g com.apple.trackpad.scaling -int 1
+
 # Trackpad: set three-finger drag
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
