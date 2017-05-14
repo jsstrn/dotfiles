@@ -56,6 +56,10 @@ defaults write com.apple.finder ShowPathbar -bool true
 # Finder: keep folders on top when sorting by name
 defaults write com.apple.finder _FXSortFoldersFirst -bool true
 
+# Keyboard: set a reasonably fast keyboard repeat rate
+defaults write NSGlobalDomain KeyRepeat -int 2
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
+
 # Trackpad: set three-finger drag
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
