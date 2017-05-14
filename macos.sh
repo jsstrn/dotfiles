@@ -35,6 +35,9 @@ defaults write com.apple.Dock showhidden -bool true
 # Dock: kill the dock to apply changes
 killall Dock
 
+# Finder: show ~/Library folder
+chflags nohidden ~/Library
+
 # Finder: show status bar
 defaults write com.apple.finder ShowStatusBar -bool true
 
