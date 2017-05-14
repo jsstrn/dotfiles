@@ -3,6 +3,9 @@
 # Run Stow
 ls -d */ | xargs stow -vv
 
+# Run Mackup restore
+mackup restore
+
 # Setup preferences for macOS (requires restart)
 ./macos.sh
 
