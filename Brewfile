@@ -3,6 +3,9 @@ cask_args appdir: '/Applications'
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
 
+# Install packages
+brew 'coreutils'
+brew 'findutils'
 brew 'git'
 brew 'mackup'
 brew 'mas'
@@ -16,12 +19,14 @@ brew 'wget'
 brew 'youtube-dl'
 brew 'z'
 
+# Install apps
 cask 'appcleaner'
 cask 'atom'
 cask 'alfred'
 cask 'atom'
 cask 'bartender'
 cask 'calibre'
+cask 'dash'
 cask 'firefox'
 cask 'fluor'
 cask 'flux'
@@ -43,6 +48,14 @@ cask 'transmission'
 cask 'tunnelbear'
 cask 'vlc'
 
+# Install QuickLook helpers
+cask 'qlcolorcode'
+cask 'qlmarkdown'
+cask 'qlstephen'
+cask 'quicklook-json'
+cask 'quicklook-csv'
+
+# Install fonts
 cask 'font-hack'
 cask 'font-fira-mono'
 cask 'font-fira-sans'
@@ -53,6 +66,7 @@ cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
+# Install apps from App Store
 mas '1Password', id: 443987910
 mas 'Airmail 3', id: 918858936
 mas 'Amphetamine', id: 937984704
