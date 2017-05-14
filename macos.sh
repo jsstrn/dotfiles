@@ -20,6 +20,9 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 # Autocorrect: disable automatic spelling correction
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+# Languages: set preferred language to US English
+defaults write NSGlobalDomain AppleLanguages -array 'en-US'
+
 # Menu bar: show battery percentage
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
