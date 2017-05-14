@@ -2,6 +2,12 @@
 
 echo 'Setting up preferences...'
 
+# Close System Preferences to prevent overriding settings we’re about to change
+osascript -e 'tell application "System Preferences" to quit'
+
+# Ask for administrator password upfront
+sudo -v
+
 # User accounts: disable guest login
 sudo defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -bool false
 
