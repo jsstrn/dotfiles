@@ -33,13 +33,13 @@ defaults write NSGlobalDomain AppleLanguages -array 'en-US'
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
 # Dock: place dock on the left
-defaults write com.apple.Dock orientation -string "left"
+defaults write com.apple.dock orientation -string "left"
 
 # Dock: automatically hide the dock
 defaults write com.apple.dock autohide -bool true
 
 # Dock: hidden applications appear as faint icons in the dock
-defaults write com.apple.Dock showhidden -bool true
+defaults write com.apple.dock showhidden -bool true
 
 # Dock: kill the dock to apply changes
 killall Dock
@@ -61,7 +61,7 @@ defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 # Trackpad: set a reasonably fast trackpad speed
-defaults write -g com.apple.trackpad.scaling -int 1
+defaults write NSGlobalDomain com.apple.trackpad.scaling -int 1
 
 # Trackpad: set three-finger drag
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
