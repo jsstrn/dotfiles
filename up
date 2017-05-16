@@ -12,6 +12,9 @@ mackup restore
 # Install applications
 ./install.sh
 
+# Setup login items
+./login-items.sh
+
 echo "Done! You're all set up and ready to go. You may need to restart your computer"
 
 # Prompt user to restart computer
