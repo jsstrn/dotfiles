@@ -13,5 +13,8 @@ brew doctor || exit $?
 # Install Homebrew Bundle
 brew tap 'homebrew/bundle'
 
-# Run Homebrew Bundle (installs items in Brewfile)
+# Uninstall dependencies not listed in Brewfile
+brew bundle cleanup
+
+# Check and installs dependencies in Brewfile
 brew bundle check || brew bundle install
