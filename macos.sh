@@ -97,14 +97,3 @@ defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
-
-# Login items
-osascript -e 'tell application "System Events" to make login item at end with properties { name: "Alfred", path: "/Applications/Alfred 3.app", hidden: false }'
-osascript -e 'tell application "System Events" to make login item at end with properties { name: "Amphetamine", path: "/Applications/Amphetamine.app", hidden: false }'
-osascript -e 'tell application "System Events" to make login item at end with properties { name: "Bartender", path: "/Applications/Bartender 2.app", hidden: false }'
-osascript -e 'tell application "System Events" to make login item at end with properties { name: "Flux", path: "/Applications/Flux.app", hidden: false }'
-osascript -e 'tell application "System Events" to make login item at end with properties { name: "Itsycal", path: "/Applications/Itsycal.app", hidden: false }'
-osascript -e 'tell application "System Events" to make login item at end with properties { name: "ShiftIt", path: "/Applications/ShiftIt.app", hidden: false }'
-osascript -e 'tell application "System Events" to make login item at end with properties { name: "TunnelBear", path: "/Applications/TunnelBear.app", hidden: false }'
-
-echo 'Done setting up preferences'
