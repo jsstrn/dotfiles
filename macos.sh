@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo 'Setting up preferences...'
-
 # Close System Preferences to prevent overriding settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
 

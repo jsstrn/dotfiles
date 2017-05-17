@@ -1,6 +1,5 @@
 #!/bin/bash
 
-echo 'Setting up login items...'
 # Alfred
 osascript -e 'tell application "System Events" to make login item at end with properties { name: "Alfred", path: "/Applications/Alfred 3.app", hidden: false }'
 # Amphetamine

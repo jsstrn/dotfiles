@@ -1,21 +1,19 @@
 #!/bin/bash
 
-# Run Stow
+echo 'Stowing your .files to $HOME'
 ls -d */ | xargs stow -vv
 
-# Run Mackup restore
+echo 'Restoring from Mackup'
 mackup restore
 
-# Setup preferences for macOS (requires restart)
+echo 'Tweaking your preferences for macOS'
 ./macos.sh
 
-# Install applications
+echo 'Installing applications'
 ./install.sh
 
-# Setup login items
+echo 'Setting up login items'
 ./login-items.sh
 
-echo "Done! You're all set up and ready to go. You may need to restart your computer"
-
-# Prompt user to restart computer
+echo 'All done! You may need to restart your computer'
 ./restart.sh
