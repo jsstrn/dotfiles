@@ -10,6 +10,10 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 osascript -e 'tell application "System Events" to make login item at end with properties { name: "Flux", path: "/Applications/Flux.app", hidden: false }'
 # Itsycal
 osascript -e 'tell application "System Events" to make login item at end with properties { name: "Itsycal", path: "/Applications/Itsycal.app", hidden: false }'
+
+# Micro Snitch
+osascript -e 'tell application "System Events" to make login item at end with properties { name: "Micro Snitch", path: "/Applications/Micro Snitch.app", hidden: false }'
+
 # ShiftIt
 osascript -e 'tell application "System Events" to make login item at end with properties { name: "ShiftIt", path: "/Applications/ShiftIt.app", hidden: false }'
 # TunnelBear
