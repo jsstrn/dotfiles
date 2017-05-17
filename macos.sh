@@ -30,6 +30,9 @@ defaults write NSGlobalDomain AppleLanguages -array 'en-US'
 # Menu bar: show battery percentage
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
+# Menu bar: display clock without day of the week
+defaults write com.apple.menuextra.clock DateFormat -string "h:mm a"
+
 # Dock: place dock on the left
 defaults write com.apple.dock orientation -string "left"
 
