@@ -80,6 +80,9 @@ defaults write com.apple.dock wvous-tr-modifier -int 0
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
+# Safari: always prompt for download folder
+defaults write com.apple.Safari AlwaysPromptForDownloadFolder -int 1
+
 # Safari: show full URL in search bar
 defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
 
