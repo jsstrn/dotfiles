@@ -1,11 +1,5 @@
 #!/bin/bash
 
-echo 'Stowing your .files to $HOME'
-ls -d */ | xargs stow -vv
-
-echo 'Restoring from Mackup'
-mackup restore
-
 echo 'Tweaking your preferences for macOS'
 ./macos.sh
 
@@ -14,6 +8,12 @@ echo 'Installing applications'
 
 echo 'Setting up login items'
 ./login-items.sh
+
+echo 'Stowing your .files to $HOME'
+ls -d */ | xargs stow -vv
+
+echo 'Restoring from Mackup'
+mackup restore
 
 echo 'All done! You may need to restart your computer'
 ./restart.sh
