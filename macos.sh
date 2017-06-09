@@ -42,9 +42,6 @@ defaults write com.apple.dock autohide -bool true
 # Dock: hidden applications appear as faint icons in the dock
 defaults write com.apple.dock showhidden -bool true
 
-# Dock: kill the dock to apply changes
-killall Dock
-
 # Finder: show ~/Library folder
 chflags nohidden ~/Library
 
@@ -104,3 +101,7 @@ defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+
+killall Dock
+killall Finder
+killall Safari
