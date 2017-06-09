@@ -9,6 +9,12 @@ sudo --validate
 # User accounts: disable guest login
 sudo defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -bool false
 
+# General: Use Dark Mode
+defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
+
+# General: Set highlight color to grey
+defaults write NSGlobalDomain AppleHighlightColor -string "0.847059 0.847059 0.862745"
+
 # Autocorrect: disable automatic capitalization
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
 
