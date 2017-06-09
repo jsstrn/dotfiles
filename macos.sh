@@ -94,6 +94,9 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
+# Safari: show status bar
+defaults write com.apple.Safari ShowStatusBar -bool true
+
 # Safari: always prompt for download folder
 defaults write com.apple.Safari AlwaysPromptForDownloadFolder -int 1
 
