@@ -61,6 +61,9 @@ defaults write com.apple.finder _FXSortFoldersFirst -bool true
 defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
+# Trackpad: enable tap to click behavior
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -int 1
+
 # Trackpad: set a reasonably fast trackpad speed
 defaults write NSGlobalDomain com.apple.trackpad.scaling -int 1
 
