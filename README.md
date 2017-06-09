@@ -26,7 +26,7 @@ Run the script
 
 ### Brewfile
 
-If you want to generate a Brewfile, run the following command
+To generate a Brewfile, run the following command
 
 ```
 brew bundle dump
@@ -45,7 +45,7 @@ mackup backup
 To restore from a previous Mackup backup, run
 
 ```
-mackup backup
+mackup restore
 ```
 
 ## thanks
