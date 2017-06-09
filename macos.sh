@@ -97,6 +97,10 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 # Safari: show status bar
 defaults write com.apple.Safari ShowStatusBar -bool true
 
+# Safari: set DuckDuckGo as the default search engine
+defaults write com.apple.Safari SearchProviderIdentifier "com.duckduckgo"
+defaults write com.apple.Safari SearchProviderIdentifierMigratedToSystemPreference -int 0
+
 # Safari: always prompt for download folder
 defaults write com.apple.Safari AlwaysPromptForDownloadFolder -int 1
 
