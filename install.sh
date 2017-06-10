@@ -1,4 +1,4 @@
-#!/bin/bash
+ #!/bin/bash
 
 # Install Xcode Command-Line Tools
 if ! xcode-select -p ; then
