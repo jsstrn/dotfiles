@@ -1,10 +1,10 @@
 #!/bin/bash
 
-echo 'Tweaking your preferences for macOS'
-./macos.sh
-
 echo 'Installing applications'
 ./install.sh
+
+echo 'Tweaking macOS preferences'
+./macos.sh
 
 echo 'Setting up login items'
 ./login-items.sh
