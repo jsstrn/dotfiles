@@ -1,14 +1,41 @@
-# If you come from bash you might have to change your $PATH.
+# If you come from bash you might have to change your $PATH
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
-export ZSH=/Users/jsstrn/.oh-my-zsh
+# Path to your oh-my-zsh installation
+export ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="pygmalion"
+# source $ZSH/oh-my-zsh.sh
 
-plugins=(git)
+# Use antigen to manage Zsh plugins
+source /usr/local/share/antigen/antigen.zsh
 
-source $ZSH/oh-my-zsh.sh
+# Load Oh My Zsh
+antigen use oh-my-zsh
+
+# Load theme
+antigen theme pygmalion
+
+# Zsh completion all the things
+antigen bundle brew
+antigen bundle docker
+antigen bundle git
+antigen bundle heroku
+antigen bundle node
+antigen bundle npm
+antigen bundle rails
+antigen bundle vagrant
+
+# Syntax highlighting
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+# Zsh completion
+antigen bundle zsh-users/zsh-completions
+
+# Fish-like autosuggestions
+antigen bundle zsh-users/zsh-autosuggestions
+
+# Tell antigen that you're done
+antigen apply
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
