@@ -94,6 +94,11 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
+# Screensaver: set screensaver to Fliqlo
+defaults -currentHost write com.apple.screensaver "moduleDict" -dict-add "moduleName" -string "Fliqlo"
+defaults -currentHost write com.apple.screensaver "moduleDict" -dict-add "path" -string $HOME"/Library/Screen Savers/Fliqlo.saver")
+defaults -currentHost write com.apple.screensaver "moduleDict" -dict-add "type" -int "0"
+
 # Safari: show status bar
 defaults write com.apple.Safari ShowStatusBar -bool true
 
