@@ -16,11 +16,11 @@ brew update
 # Install Homebrew Bundle
 brew tap 'homebrew/bundle'
 
-# Uninstall dependencies not listed in Brewfile
-brew bundle cleanup --force
+# List dependencies to uninstall, apend --force to actually uninstall
+brew bundle cleanup # --force
 
 # Upgrade installed dependencies
-brew upgrade --all
+brew upgrade
 
 # Check and installs dependencies in Brewfile
 brew bundle check || brew bundle install
