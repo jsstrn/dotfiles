@@ -12,9 +12,6 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -boo
 # General: Use Dark Mode
 defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
 
-# General: Set highlight color to grey
-defaults write NSGlobalDomain AppleHighlightColor -string "0.847059 0.847059 0.862745"
-
 # Autocorrect: disable automatic capitalization
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
 
@@ -31,7 +28,12 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 # Languages: set preferred language to US English
-defaults write NSGlobalDomain AppleLanguages -array 'en-US'
+defaults write NSGlobalDomain AppleLanguages -array "en-US"
+
+# Languages: set spelling suggestions to US English
+defaults write NSGlobalDomain NSPreferredSpellServerLanguage -string "en"
+defaults write NSGlobalDomain NSPreferredSpellServerVendors -dict "en" "Apple"
+defaults write NSGlobalDomain NSSpellCheckerAutomaticallyIdentifiesLanguages -int 0
 
 # Menu bar: show battery percentage
 defaults write com.apple.menuextra.battery ShowPercent -string "YES"
@@ -39,8 +41,8 @@ defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 # Menu bar: display clock without day of the week
 defaults write com.apple.menuextra.clock DateFormat -string "h:mm a"
 
-# Dock: place dock on the left
-defaults write com.apple.dock orientation -string "left"
+# Dock: place dock on the right
+defaults write com.apple.dock orientation -string "right"
 
 # Dock: automatically hide the dock
 defaults write com.apple.dock autohide -bool true
