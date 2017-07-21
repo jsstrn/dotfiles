@@ -9,9 +9,6 @@ sudo --validate
 # User accounts: disable guest login
 sudo defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -bool false
 
-# General: Use Dark Mode
-defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
-
 # Autocorrect: disable automatic capitalization
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
 
@@ -130,6 +127,7 @@ defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool 
 defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
+# Restart applications
 killall Dock
 killall Finder
 killall Safari
