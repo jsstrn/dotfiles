@@ -15,29 +15,30 @@ brew 'node'
 brew 'postgresql'
 brew 'python'
 brew 'stow'
+brew 'thefuck'
 brew 'trash'
 brew 'tree'
 brew 'vim'
 brew 'youtube-dl'
 brew 'z'
 brew 'zsh'
-brew 'zsh-autosuggestions'
-brew 'zsh-syntax-highlighting'
 
 # Install apps
-cask 'appcleaner'
-cask 'atom'
 cask 'alfred'
+cask 'appcleaner'
+cask 'atext'
 cask 'atom'
 cask 'bartender'
 cask 'calibre'
 cask 'dash'
+cask 'docker'
 cask 'firefox'
 cask 'fliqlo'
 cask 'fluor'
 cask 'flux'
 cask 'franz'
 cask 'google-chrome'
+cask 'hammerspoon'
 cask 'iterm2'
 cask 'itsycal'
 cask 'java'
@@ -49,6 +50,7 @@ cask 'macdown'
 cask 'micro-snitch'
 cask 'rowanj-gitx'
 cask 'shiftit'
+cask 'spotify'
 cask 'sublime-text'
 cask 'telegram'
 cask 'transmission'
@@ -73,15 +75,21 @@ cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
-# Install apps from App Store
+# Install apps from Mac App Store
 mas '1Password', id: 443987910
 mas 'Airmail 3', id: 918858936
 mas 'Amphetamine', id: 937984704
 mas 'Bear', id: 1091189122
-mas 'Enpass', id: 732710998
 mas 'Fantastical 2', id: 975937182
 mas 'Keynote', id: 409183694
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
 mas 'Pocket', id: 568494494
 mas 'Skitch', id: 425955336
+mas 'Twitter', id: 409789998
+
+# Optional
+# mas 'aText', id: 488566438 - install aText from Mac App Store to transfer license
+# mas 'Final Cut Pro', 424389933
+# mas 'Logic Pro X', 634148309
+# mas 'Xcode', 497799835
