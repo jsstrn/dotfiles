@@ -29,4 +29,4 @@ brew bundle check || brew bundle install
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Change shell to Zsh
-chsh -s /bin/zsh
+chsh -s $(which zsh)
