@@ -1,19 +1,19 @@
 #!/bin/bash
 
-echo 'Installing applications'
+echo -e '\n📦  Installing applications\n'
 ./install.sh
 
-echo 'Tweaking macOS preferences'
+echo -e '\n🔧  Tweaking macOS preferences\n'
 ./macos.sh
 
-echo 'Setting up login items'
+echo -e '\n✨  Configure which apps to start on start up\n'
 ./login-items.sh
 
-echo 'Stowing your .files to $HOME'
+echo -e '\n🗄  Stowing your .files to $HOME\n'
 ls -d */ | xargs stow -vv
 
-echo 'Restoring from Mackup'
+echo -e '\n🎨  Restoring from Mackup\n'
 mackup restore
 
-echo 'All done! You may need to restart your computer'
+echo -e '\n🖥  All done! You may need to restart your computer'
 ./restart.sh
