@@ -1,5 +1,6 @@
 cask_args appdir: '/Applications'
 
+tap 'homebrew/services'
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
 
@@ -19,6 +20,7 @@ brew 'thefuck'
 brew 'trash'
 brew 'tree'
 brew 'vim'
+brew 'yarn'
 brew 'youtube-dl'
 brew 'z'
 brew 'zsh'
