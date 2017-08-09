@@ -7,13 +7,13 @@ These be the dotfiles. Get a fresh Mac up and running in less time than it takes
 On a fresh Mac, open Terminal
 
 ```
-git clone https://github.com/jsstrn/dotfiles.git ~/dotfiles
+git clone https://github.com/jsstrn/dotfiles.git ~/.dotfiles
 ```
 
 Change into the directory
 
 ```
-cd ~/dotfiles
+cd ~/.dotfiles
 ```
 
 Run the script
