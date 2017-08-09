@@ -40,11 +40,9 @@ cask 'fluor'
 cask 'flux'
 cask 'franz'
 cask 'google-chrome'
-cask 'hammerspoon'
 cask 'iterm2'
 cask 'itsycal'
 cask 'java'
-cask 'jetbrains-toolbox'
 cask 'keepassx'
 cask 'keybase'
 cask 'keycastr'
@@ -58,6 +56,20 @@ cask 'telegram'
 cask 'transmission'
 cask 'tunnelbear'
 cask 'vlc'
+
+# Jetbrains
+# cask 'appcode'
+# cask 'clion'
+# cask 'datagrip'
+# cask 'gogland'
+# cask 'intellij-idea'
+# cask 'intellij-idea-ce'
+# cask 'jetbrains-toolbox'
+# cask 'phpstorm'
+# cask 'pycharm'
+# cask 'pycharm-ce'
+# cask 'rubymine'
+# cask 'webstorm'
 
 # Install QuickLook helpers
 cask 'qlcolorcode'
@@ -90,7 +102,6 @@ mas 'Pocket', id: 568494494
 mas 'Skitch', id: 425955336
 mas 'Twitter', id: 409789998
 
-# Optional
 # mas 'aText', id: 488566438 - install aText from Mac App Store to transfer license
 # mas 'Final Cut Pro', 424389933
 # mas 'Logic Pro X', 634148309
