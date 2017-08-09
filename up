@@ -6,14 +6,17 @@ echo -e '\n📦  Installing applications\n'
 echo -e '\n🔧  Tweaking macOS preferences\n'
 ./macos.sh
 
-echo -e '\n✨  Configure which apps to start on start up\n'
+echo -e '\n✨  Configure which apps to start when you login\n'
 ./login-items.sh
 
 echo -e '\n🗄  Stowing your .files to $HOME\n'
 ls -d */ | xargs stow -vv
 
 echo -e '\n🎨  Restoring from Mackup\n'
-mackup restore
+# mackup restore
+
+echo -e '\n🔑  Generating an SSH key\n'
+./ssh.sh
 
 echo -e '\n🖥  All done! You may need to restart your computer'
 ./restart.sh
