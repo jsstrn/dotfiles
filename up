@@ -12,11 +12,14 @@ echo -e '\n✨  Configure which apps to start when you login\n'
 echo -e '\n🗄  Stowing your .files to $HOME\n'
 ls -d */ | xargs stow -vv
 
-echo -e '\n🎨  Restoring from Mackup\n'
+# echo -e '\n🎨  Restoring from Mackup\n'
 # mackup restore
 
 echo -e '\n🔑  Generating an SSH key\n'
 ./ssh.sh
+
+echo -e '\n📅  Scheduling crontab tasks\n'
+crontab ./cron.txt
 
 echo -e '\n🖥  All done! You may need to restart your computer'
 ./restart.sh
