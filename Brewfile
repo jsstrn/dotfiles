@@ -10,17 +10,13 @@ brew 'coreutils'
 brew 'ffmpeg'
 brew 'findutils'
 brew 'git'
-brew 'golang'
 brew 'mas'
-brew 'node'
-brew 'postgresql'
-brew 'python'
 brew 'stow'
 brew 'thefuck'
+brew 'tmux'
 brew 'trash'
 brew 'tree'
 brew 'vim'
-brew 'yarn'
 brew 'youtube-dl'
 brew 'z'
 brew 'zsh'
@@ -33,7 +29,6 @@ cask 'atom'
 cask 'bartender'
 cask 'calibre'
 cask 'dash'
-cask 'docker'
 cask 'firefox'
 cask 'fliqlo'
 cask 'fluor'
@@ -44,7 +39,6 @@ cask 'hammerspoon'
 cask 'insomnia'
 cask 'iterm2'
 cask 'itsycal'
-cask 'java'
 cask 'keepassx'
 cask 'keybase'
 cask 'keycastr'
@@ -57,6 +51,7 @@ cask 'sublime-text'
 cask 'telegram'
 cask 'transmission'
 cask 'tunnelbear'
+cask 'visual-studio-code'
 cask 'vlc'
 
 # Install QuickLook helpers
@@ -90,6 +85,29 @@ mas 'Pocket', id: 568494494
 mas 'Skitch', id: 425955336
 mas 'Twitter', id: 409789998
 
+# Optionals
+
+# Programming languages
+brew 'elixir'
+cask 'java'
+brew 'golang'
+brew 'python'
+brew 'ruby'
+brew 'node'
+
+# Tools
+cask 'docker'
+cask 'insomnia'
+cask 'virtualbox'
+brew 'yarn'
+
+# Databases
+cask 'pgadmin4'
+cask 'postgres'
+brew 'postgresql'
+brew 'sqlite'
+cask 'sqlitebrowser'
+
 # Jetbrains
 # cask 'appcode'
 # cask 'clion'
@@ -97,14 +115,14 @@ mas 'Twitter', id: 409789998
 # cask 'gogland'
 # cask 'intellij-idea'
 # cask 'intellij-idea-ce'
-# cask 'jetbrains-toolbox'
 # cask 'phpstorm'
 # cask 'pycharm'
 # cask 'pycharm-ce'
 # cask 'rubymine'
 # cask 'webstorm'
 
-# mas 'aText', id: 488566438 - install aText from Mac App Store to transfer license
+# Applications
+# mas 'aText', id: 488566438 # install aText from Mac App Store to transfer license
 # mas 'Final Cut Pro', 424389933
 # mas 'Logic Pro X', 634148309
 # mas 'Xcode', 497799835
