@@ -12,6 +12,9 @@ echo -e '\n✨  Configure which apps to start when you login\n'
 echo -e '\n🗄  Stowing your .files to $HOME\n'
 ls -d */ | xargs stow -vv
 
+echo -e '\n🙅  Applying ~/.gitignore globally\n'
+git config core.excludesfile ~/.gitignore
+
 # echo -e '\n🎨  Restoring from Mackup\n'
 # mackup restore
 
