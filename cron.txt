@@ -1,3 +1,5 @@
 PATH=/usr/local/bin:/usr/bin:/bin
 
-0	20	*	*	0	/Users/jsstrn/.dotfiles/cron.sh
+@reboot	ssh-add -K ~/.ssh/id_rsa
+
+0	12,20	*	*	0	/Users/jsstrn/.dotfiles/cron.sh
