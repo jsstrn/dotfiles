@@ -6,10 +6,10 @@ alias zshrc="subl ~/.zshrc"
 alias wtf="fuck"
 alias addkey="ssh-add -K ~/.ssh/id_rsa"
 
-# Chrome aliases
-alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
-alias chrome-canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
-alias chromium="/Applications/Chromium.app/Contents/MacOS/Chromium"
+alias chrome="open -a /Applications/Google\ Chrome.app"
+alias chrome-in="open -a /Applications/Google\ Chrome.app --args --incognito"
+alias firefox="open -a /Applications/Firefox.app"
+alias safari="open -a safari"
 
 # Git aliases
 alias gap="git add --patch"
