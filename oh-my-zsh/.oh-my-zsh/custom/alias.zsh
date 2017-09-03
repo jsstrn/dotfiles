@@ -17,6 +17,7 @@ alias gcm="git commit -m"
 alias gl="git log"
 alias gp="git push"
 alias gpr="git pull --rebase"
+alias gst="git status"
 
 # Check what's running on a specific port number (usage: $ port 8080)
 function port() {
