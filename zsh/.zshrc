@@ -14,31 +14,31 @@ antigen use oh-my-zsh
 
 # Oh My Zsh plugins - https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins
 
-# Load completions for macOS
+# Load plugins for macOS
 antigen bundle command-not-found
-antigen bundle git
+# antigen bundle git
 antigen bundle osx
 antigen bundle sudo
 antigen bundle brew
 
-# Load completions for vendors
+# Load plugins for vendors
 antigen bundle aws
 antigen bundle docker
 antigen bundle heroku
 antigen bundle web-search
 antigen bundle vagrant
 
-# Load completions for JavaScript and Node.js
+# Load plugins for JavaScript and Node.js
 antigen bundle node
 antigen bundle npm
 antigen bundle yarn
 
-# Load completions for Ruby
+# Load plugins for Ruby
 antigen bundle bundler
 antigen bundle gem
 antigen bundle rails
 
-# Load plugins
+# Load other plugins
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
