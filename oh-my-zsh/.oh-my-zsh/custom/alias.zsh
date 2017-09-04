@@ -14,9 +14,13 @@ alias safari="open -a safari"
 # Git aliases
 alias gap="git add --patch"
 alias gcm="git commit -m"
+alias gco="git checkout"
+alias gd="git diff"
 alias gl="git log"
 alias gp="git push"
 alias gpr="git pull --rebase"
+alias gsh="git stash"
+alias gsp="git stash pop"
 alias gst="git status"
 
 # Check what's running on a specific port number (usage: $ port 8080)
