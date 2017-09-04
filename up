@@ -1,8 +1,10 @@
 #!/bin/bash
 
-echo -e '\n📦  Installing applications\n'
+echo -e '\n🎱  Installing applications\n'
 ./install.sh
 
+echo -e "\n📦  Installing NPM packages globally\n"
+./install-npm.sh
 echo -e '\n🔧  Tweaking macOS preferences\n'
 ./macos.sh
 

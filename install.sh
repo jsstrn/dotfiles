@@ -25,12 +25,6 @@ brew upgrade
 # Check and installs dependencies in Brewfile
 brew bundle check || brew bundle install
 
-# Install NPM packages globally
-npm install -g http-server
-npm install -g json-server
-npm install -g create-react-app
-npm install -g nativefier
-
 # Install Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
