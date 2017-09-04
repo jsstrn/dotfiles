@@ -5,6 +5,10 @@ echo -e '\n🎱  Installing applications\n'
 
 echo -e "\n📦  Installing NPM packages globally\n"
 ./install-npm.sh
+
+echo -e '\n🤔  Checking to see if you already have WorkFlowy\n'
+./install-workflowy.sh
+
 echo -e '\n🔧  Tweaking macOS preferences\n'
 ./macos.sh
 
