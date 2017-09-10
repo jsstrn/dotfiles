@@ -5,6 +5,7 @@ alias zshrc="subl ~/.zshrc"
 
 alias wtf="fuck"
 alias addkey="ssh-add -K ~/.ssh/id_rsa"
+alias ip="ipconfig getifaddr en0" # get IP address of your computer
 
 alias chrome="open -a /Applications/Google\ Chrome.app"
 alias chrome-in="open -a /Applications/Google\ Chrome.app --args --incognito"
@@ -13,13 +14,15 @@ alias safari="open -a safari"
 
 # Git aliases
 alias gap="git add --patch"
+alias gb="git branch"
 alias gcm="git commit -m"
 alias gco="git checkout"
 alias gd="git diff"
+alias gf="git fetch"
 alias gl="git log"
 alias gp="git push"
 alias gpr="git pull --rebase"
-alias gsh="git stash"
+alias gs="git stash"
 alias gsp="git stash pop"
 alias gst="git status"
 
