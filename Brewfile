@@ -6,6 +6,7 @@ tap 'caskroom/fonts'
 
 # Install packages
 brew 'antigen'
+brew 'bash'
 brew 'coreutils'
 brew 'ffmpeg'
 brew 'findutils'
