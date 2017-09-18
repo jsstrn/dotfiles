@@ -25,6 +25,7 @@ alias gpr="git pull --rebase"
 alias gs="git stash"
 alias gsp="git stash pop"
 alias gst="git status"
+alias gsps="gs && gpr && gsp"
 
 # Check what's running on a specific port number (usage: $ port 8080)
 function port() {
