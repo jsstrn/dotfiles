@@ -45,6 +45,7 @@ cask 'keybase'
 cask 'keycastr'
 cask 'macdown'
 cask 'micro-snitch'
+cask 'notion'
 cask 'rowanj-gitx'
 cask 'shiftit'
 cask 'spotify'
@@ -84,6 +85,7 @@ mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
 mas 'Pocket', id: 568494494
 mas 'Skitch', id: 425955336
+mas 'Trello', id: 1278508951
 mas 'Twitter', id: 409789998
 
 # Optionals
