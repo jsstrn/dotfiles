@@ -1,19 +1,19 @@
 #!/bin/bash
 
 echo -e '\n🎱  Installing applications\n'
-./install.sh
+.scripts/install.sh
 
 echo -e "\n📦  Installing NPM packages globally\n"
-./install-npm.sh
+.scripts/install-npm.sh
 
 echo -e '\n🤔  Checking to see if you already have WorkFlowy\n'
-./install-workflowy.sh
+.scripts/install-apps.sh
 
 echo -e '\n🔧  Tweaking macOS preferences\n'
-./macos.sh
+.scripts/macos.sh
 
 echo -e '\n✨  Configure which apps to start when you login\n'
-./login-items.sh
+.scripts/login-items.sh
 
 echo -e '\n🗄  Stowing your .files to $HOME\n'
 ls -d */ | xargs stow -vv
@@ -25,10 +25,10 @@ git config core.excludesfile ~/.gitignore
 # mackup restore
 
 echo -e '\n🔑  Generating an SSH key\n'
-./ssh.sh
+.scripts/ssh.sh
 
 echo -e '\n📅  Scheduling crontab tasks\n'
-crontab ./cron.txt
+crontab .scripts/cron.txt
 
 echo -e '\n🖥  All done! You may need to restart your computer'
-./restart.sh
+.scripts/restart.sh

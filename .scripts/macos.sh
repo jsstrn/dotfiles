@@ -59,6 +59,9 @@ defaults write com.apple.finder ShowPathbar -bool true
 # Finder: keep folders on top when sorting by name
 defaults write com.apple.finder _FXSortFoldersFirst -bool true
 
+# Finder: show file extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
 # Keyboard: set a reasonably fast keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
