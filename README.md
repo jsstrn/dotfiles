@@ -4,7 +4,7 @@ These be the dotfiles. Get a fresh Mac up and running in less time than it takes
 
 ## usage
 
-On a fresh Mac, open Terminal
+Clone the repository
 
 ```
 git clone https://github.com/jsstrn/dotfiles.git ~/.dotfiles
@@ -22,14 +22,23 @@ Run the script
 ./up
 ```
 
-### Install browser extensions
+### Install browser extensions (manually)
 
-I haven't found a way to automate this step so you'll have to download them manually
-
+For all browsers
 - [uBlock](https://www.ublock.org)
 - [Privacy Badger](https://www.eff.org/privacybadger)
 - [HTTPS Everywhere](https://www.eff.org/https-everywhere)
+- [Mailvelope](https://www.mailvelope.com/en)
+
+For Firefox
 - [Lightbeam for Firefox](https://addons.mozilla.org/en-US/firefox/addon/lightbeam/)
+
+For Chrome
+- [Octotree](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc)
+- [GitHub Repository Size](https://chrome.google.com/webstore/detail/github-repository-size/apnjnioapinblneaedefcnopcjepgkci)
+- [OctoLinker](https://chrome.google.com/webstore/detail/octolinker/jlmafbaeoofdegohdhinkhilhclaklkp)
+- [Isometric Contributions](https://chrome.google.com/webstore/detail/isometric-contributions/mjoedlfflcchnleknnceiplgaeoegien)
+- [Earth View from Google Earth](https://chrome.google.com/webstore/detail/earth-view-from-google-ea/bhloflhklmhfpedakmangadcdofhnnoh)
 
 ## setup
 
@@ -45,7 +54,7 @@ Adding `--force` will overwrite an existing Brewfile.
 
 ## thanks
 
-The popular [dotfiles](https://dotfiles.github.io) do a lot and instead of just forking them, I wanted to write my own simplified dotfiles.
+The popular [dotfiles](https://dotfiles.github.io) do a lot and instead of just forking them, I wanted to write my own dotfiles.
 
 - some install scripts were plucked from [Sahil Bajaj](https://github.com/spinningarrow/)'s [up](https://github.com/spinningarrow/up)
 - some macOS preferences were picked from [Mathias Bynens](https://github.com/mathiasbynens/)' [dotfiles](https://github.com/mathiasbynens/dotfiles/blob/master/.macos)
