@@ -2,8 +2,8 @@
 
 alias omz="subl ~/.oh-my-zsh"
 alias zshrc="subl ~/.zshrc"
-
 alias wtf="fuck"
+alias beer="brew update && brew upgrade && brew cleanup && brew cask cleanup"
 alias addkey="ssh-add -K ~/.ssh/id_rsa"
 alias ip="ipconfig getifaddr en0" # get IP address of your computer
 
