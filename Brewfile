@@ -12,7 +12,9 @@ brew 'coreutils'
 brew 'ffmpeg'
 brew 'findutils'
 brew 'git'
+brew 'mackup'
 brew 'mas'
+brew 'nyancat'
 brew 'pass'
 brew 'stow'
 brew 'thefuck'
@@ -109,24 +111,24 @@ cask 'virtualbox'
 brew 'yarn'
 
 # Databases
-cask 'pgadmin4'
+# cask 'pgadmin4'
 cask 'postgres'
 brew 'postgresql'
 brew 'sqlite'
-cask 'sqlitebrowser'
+# cask 'sqlitebrowser'
 
 # Jetbrains
 # cask 'appcode'
 # cask 'clion'
 # cask 'datagrip'
 # cask 'gogland'
-# cask 'intellij-idea'
+cask 'intellij-idea'
 # cask 'intellij-idea-ce'
 # cask 'phpstorm'
 # cask 'pycharm'
 # cask 'pycharm-ce'
 # cask 'rubymine'
-# cask 'webstorm'
+cask 'webstorm'
 
 # Applications
 # mas 'aText', id: 488566438 # install aText from Mac App Store to transfer license
