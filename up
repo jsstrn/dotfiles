@@ -1,33 +1,37 @@
 #!/bin/bash
 
-echo -e '\n🎱  Installing applications\n'
+function display {
+	echo -e "\n$1\n"
+}
+
+display '🎱  Installing applications'
 .scripts/install.sh
 
-echo -e "\n📦  Installing NPM packages globally\n"
+display '📦  Installing npm packages globally'
 .scripts/install-npm.sh
 
-echo -e '\n🤔  Checking to see if you already have WorkFlowy\n'
+display '🤔  Installing custom applications'
 .scripts/install-apps.sh
 
-echo -e '\n🔧  Tweaking macOS preferences\n'
+display '🔧  Tweaking macOS preferences'
 .scripts/macos.sh
 
-echo -e '\n✨  Configure which apps to start when you login\n'
+display '✨  Configure login items'
 .scripts/login-items.sh
 
-echo -e '\n🗄  Stowing your .files to $HOME\n'
+display '🗄  Stowing your .files to $HOME'
 ls -d */ | xargs stow -vv
 
-echo -e '\n🙅  Applying ~/.gitignore globally\n'
+display '🙅  Applying ~/.gitignore globally'
 git config core.excludesfile ~/.gitignore
 
 # echo -e '\n🎨  Restoring from Mackup\n'
 # mackup restore
 
-echo -e '\n🔑  Generating an SSH key\n'
+display '🔑  Generating ssh key'
 .scripts/ssh.sh
 
-echo -e '\n📅  Scheduling crontab tasks\n'
+display '📅  Scheduling crontab tasks'
 crontab .scripts/cron.txt
 
 echo -e '\n🖥  All done! You may need to restart your computer'
