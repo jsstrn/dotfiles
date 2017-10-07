@@ -4,35 +4,69 @@ function display {
 	echo -e "\n$1\n"
 }
 
-display '🎱  Installing applications'
-.scripts/install.sh
+function installApplications {
+	display '🎱  Installing applications'
+	.scripts/install.sh
+}
 
-display '📦  Installing npm packages globally'
-.scripts/install-npm.sh
+function installNPM {
+	display '📦  Installing npm packages globally'
+	.scripts/install-npm.sh
+}
 
-display '🤔  Installing custom applications'
-.scripts/install-apps.sh
+function installCustom {
+	display '🤔  Installing custom applications'
+	.scripts/install-apps.sh
+}
 
-display '🔧  Tweaking macOS preferences'
-.scripts/macos.sh
+function macOSPreferences {
+	display '🔧  Tweaking macOS preferences'
+	.scripts/macos.sh
+}
 
-display '✨  Configure login items'
-.scripts/login-items.sh
+function loginItems {
+	display '✨  Configure login items'
+	.scripts/login-items.sh
+}
 
-display '🗄  Stowing your .files to $HOME'
-ls -d */ | xargs stow -vv
+function stowFiles {
+	display '🗄  Stowing your .files to $HOME'
+	ls -d */ | xargs stow -vv
+}
 
-display '🙅  Applying ~/.gitignore globally'
-git config core.excludesfile ~/.gitignore
+function applyGitIgnore {
+	display '🙅  Applying ~/.gitignore globally'
+	git config core.excludesfile ~/.gitignore
+}
 
-# echo -e '\n🎨  Restoring from Mackup\n'
-# mackup restore
+function mackupRestore {
+	echo -e '\n🎨  Restoring from Mackup\n'
+	mackup restore
+}
 
-display '🔑  Generating ssh key'
-.scripts/ssh.sh
+function generateSSHKey {
+	display '🔑  Generating ssh key'
+	.scripts/ssh.sh
+}
 
-display '📅  Scheduling crontab tasks'
-crontab .scripts/cron.txt
+function scheduleCron {
+	display '📅  Scheduling crontab tasks'
+	crontab .scripts/cron.txt
+}
 
-echo -e '\n🖥  All done! You may need to restart your computer'
-.scripts/restart.sh
+function restartComputer {
+	display '🖥  All done! You may need to restart your computer'
+	.scripts/restart.sh
+}
+
+installApplications
+installNPM
+installCustom
+macOSPreferences
+loginItems
+stowFiles
+applyGitIgnore
+mackupRestore
+generateSSHKey
+scheduleCron
+restartComputer
