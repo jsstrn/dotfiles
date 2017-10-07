@@ -59,14 +59,22 @@ function restartComputer {
 	.scripts/restart.sh
 }
 
-installApplications
-installNPM
-installCustom
-macOSPreferences
-loginItems
-stowFiles
-applyGitIgnore
-mackupRestore
-generateSSHKey
-scheduleCron
-restartComputer
+function runAll {
+	installApplications
+	installNPM
+	installCustom
+	macOSPreferences
+	loginItems
+	stowFiles
+	applyGitIgnore
+	mackupRestore
+	generateSSHKey
+	scheduleCron
+	restartComputer
+}
+
+case $1 in
+	* )
+	runAll
+		;;
+esac

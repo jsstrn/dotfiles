@@ -1,11 +1,11 @@
 #!/bin/bash
 
-function generateKeys() {
+function generateKeys {
   echo -e '\n🔒  Generating new SSH key\n'
-  # ssh-keygen -t rsa -b 4096 -C "jsstrn@users.noreply.github.com"
+  ssh-keygen -t rsa -b 4096 -C "jsstrn@users.noreply.github.com"
 }
 
-function addKeysToAgent() {
+function addKeysToAgent {
   echo -e '\n🕵️  Starting the SSH agent\n'
   eval "$(ssh-agent -s)"
 
@@ -13,7 +13,7 @@ function addKeysToAgent() {
   ssh-add -K ~/.ssh/id_rsa
 }
 
-function copyKeysToClipboard() {
+function copyKeysToClipboard {
   echo -e '\n📋  Copying your public key to the clipboard\n'
   cat ~/.ssh/id_rsa.pub | pbcopy
 }
