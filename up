@@ -4,6 +4,11 @@ function display {
 	echo -e "\n$1\n"
 }
 
+function createDirectories {
+	display '📂 Creating directories'
+	.scripts/dir.sh
+}
+
 function installApplications {
 	display '🎱  Installing applications'
 	.scripts/install.sh
@@ -60,6 +65,7 @@ function restartComputer {
 }
 
 function runAll {
+	createDirectories
 	installApplications
 	installNPM
 	installCustom
