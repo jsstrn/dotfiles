@@ -4,6 +4,8 @@ These be the dotfiles. Get a fresh Mac up and running in less time than it takes
 
 ## usage
 
+Follow these steps if you need to [format your machine and reinstall macOS](https://support.apple.com/en-us/HT204904).
+
 Clone the repository
 
 ```
