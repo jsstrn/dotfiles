@@ -3,3 +3,6 @@
 		email = jsstrn@users.noreply.github.com
 [credential]
 		helper = osxkeychain
+[core]
+	quotepath = false
+	excludesfile = ~/.gitignore
