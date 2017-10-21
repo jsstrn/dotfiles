@@ -5,7 +5,7 @@ function display {
 }
 
 function createDirectories {
-	display '📂 Creating directories'
+	display '📂  Creating directories'
 	.scripts/dir.sh
 }
 
@@ -45,7 +45,7 @@ function applyGitIgnore {
 }
 
 function mackupRestore {
-	echo -e '\n🎨  Restoring from Mackup\n'
+	display '🎨  Restoring from Mackup\n'
 	mackup restore
 }
 
