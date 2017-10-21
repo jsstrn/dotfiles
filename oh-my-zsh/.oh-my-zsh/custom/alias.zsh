@@ -1,7 +1,11 @@
 # Aliases
 
+alias a.="atom ."
+alias s.="subl ."
+
 alias omz="subl ~/.oh-my-zsh"
 alias zshrc="subl ~/.zshrc"
+
 alias wtf="fuck"
 alias beer="brew update && brew upgrade && brew cleanup && brew cask cleanup"
 alias addkey="ssh-add -K ~/.ssh/id_rsa"
@@ -9,7 +13,9 @@ alias ip="ipconfig getifaddr en0" # get IP address of your computer
 
 alias chrome="open -a /Applications/Google\ Chrome.app"
 alias chrome-in="open -a /Applications/Google\ Chrome.app --args --incognito"
+alias ff="open -a /Applications/Firefox.app"
 alias firefox="open -a /Applications/Firefox.app"
+alias ffde="open -a /Applications/FirefoxDeveloperEdition.app"
 alias safari="open -a safari"
 
 # Git aliases
