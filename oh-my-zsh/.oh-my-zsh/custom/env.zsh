@@ -8,3 +8,5 @@ export ZSH=$HOME/.oh-my-zsh
 export GOPATH=$HOME/Developer/go
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PATH=$PATH:$(go env GOPATH)/bin
+
+echo -e "🌳  Environment variables are all set"
