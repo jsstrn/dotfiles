@@ -27,17 +27,21 @@ alias gd="git diff"
 alias gf="git fetch"
 alias gl="git log"
 alias gp="git push"
+alias gpom="git push origin master"
 alias gpr="git pull --rebase"
 alias gs="git stash"
 alias gsp="git stash pop"
 alias gst="git status"
 alias gsps="gs && gpr && gsp"
 
+# Lock the computer by putting the display to sleep immediately
+function lock {
+  pmset displaysleepnow
+}
+
 # Check what's running on a specific port number (usage: $ port 8080)
-function port() {
+function port {
   lsof -n -i4TCP:$1 | grep LISTEN
 }
 
-function x() {
-  kill -9 $1
-}
+echo -e "🚀  Aliases are all set"
