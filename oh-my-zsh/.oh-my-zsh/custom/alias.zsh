@@ -6,6 +6,7 @@ alias s.="subl ."
 alias omz="subl ~/.oh-my-zsh"
 alias zshrc="subl ~/.zshrc"
 
+alias weather="curl wttr.in"
 alias wtf="fuck"
 alias beer="brew update && brew upgrade && brew cleanup && brew cask cleanup"
 alias addkey="ssh-add -K ~/.ssh/id_rsa"
@@ -39,9 +40,35 @@ function lock {
   pmset displaysleepnow
 }
 
+# Turn on/off your wifi (usage: wifi on)
+function wifi {
+  case $1 in
+    'on' | 'off' )
+      networksetup -setairportpower en0 $1
+      ;;
+    'status' )
+      networksetup -getairportnetwork en0
+      ;;
+    * )
+      echo -e "📡  wifi on     - turn on wifi"
+      echo -e "📡  wifi off    - turn off wifi"
+      echo -e "📡  wifi status - check wifi status"
+      ;;
+  esac
+}
+
 # Check what's running on a specific port number (usage: $ port 8080)
 function port {
   lsof -n -i4TCP:$1 | grep LISTEN
+}
+
+# Find process id of a given app (usage: getPid node or getpid node)
+function getPid {
+  ps ax | grep $1
+}
+
+function getpid {
+  getPid
 }
 
 echo -e "🚀  Aliases are all set"
