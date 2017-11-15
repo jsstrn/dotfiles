@@ -5,7 +5,7 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 # Amphetamine
 osascript -e 'tell application "System Events" to make login item at end with properties { name: "Amphetamine", path: "/Applications/Amphetamine.app", hidden: false }'
 # Bartender
-osascript -e 'tell application "System Events" to make login item at end with properties { name: "Bartender", path: "/Applications/Bartender 2.app", hidden: false }'
+osascript -e 'tell application "System Events" to make login item at end with properties { name: "Bartender", path: "/Applications/Bartender 3.app", hidden: false }'
 # Fluor
 osascript -e 'tell application "System Events" to make login item at end with properties { name: "Fluor", path: "/Applications/Fluor.app", hidden: false }'
 # Flux
