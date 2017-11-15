@@ -1,5 +1,8 @@
 # Zsh configurations
 
+export ZSH=$HOME/.oh-my-zsh
+export ZSH_CUSTOM=$HOME/.oh-my-zsh/custom
+
 # Use z
 . /usr/local/etc/profile.d/z.sh
 
@@ -48,6 +51,9 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Apply changes
 antigen apply
+
+# Load theme
+ZSH_THEME=pygmalion
 
 # Source Oh My Zsh
 source $ZSH/oh-my-zsh.sh
