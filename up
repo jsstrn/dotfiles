@@ -79,8 +79,17 @@ function runAll {
 	restartComputer
 }
 
+cat banner
+
 case $1 in
+	stow )
+		stowFiles
+		;;
+	all )
+		runAll
+		;;
 	* )
-	runAll
+		echo -e "usage: up all	- run all commands"
+		echo -e "usage: up stow	- just run the stow command"
 		;;
 esac
