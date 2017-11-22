@@ -109,6 +109,7 @@ mas 'Vim Options', id: 916688914
 # brew 'python'
 
 # Tools
+# brew 'ansible'
 # cask 'docker'
 # cask 'insomnia'
 # cask 'vagrant'
