@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 function generateKeys {
   echo -e '\n🔒  Generating new SSH key\n'
   ssh-keygen -t rsa -b 4096 -C "jsstrn@users.noreply.github.com"
