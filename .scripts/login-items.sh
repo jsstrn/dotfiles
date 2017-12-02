@@ -16,5 +16,7 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 osascript -e 'tell application "System Events" to make login item at end with properties { name: "Micro Snitch", path: "/Applications/Micro Snitch.app", hidden: false }'
 # ShiftIt
 osascript -e 'tell application "System Events" to make login item at end with properties { name: "ShiftIt", path: "/Applications/ShiftIt.app", hidden: false }'
-# TunnelBear
+# NordVPN
 osascript -e 'tell application "System Events" to make login item at end with properties { name: "NordVPN", path: "/Applications/NordVPN.app", hidden: false }'
+# Tomato One
+osascript -e 'tell application "System Events" to make login item at end with properties { name: "Tomato One", path: "/Applications/Tomato One.app", hidden: false }'
