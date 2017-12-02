@@ -62,6 +62,7 @@ function port {
   lsof -n -i4TCP:$1 | grep LISTEN
 }
 
+<<<<<<< HEAD
 # Find process id of a given app (usage: getPid node or getpid node)
 function getPid {
   ps ax | grep $1
@@ -72,3 +73,6 @@ function getpid {
 }
 
 echo -e "🚀  Aliases are all set"
+=======
+echo -e "\n🚀  Setting up your aliases\n"
+>>>>>>> Update print statements
