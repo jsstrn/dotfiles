@@ -1,24 +1,19 @@
 #!/usr/local/bin/bash
 
-# Nativefy apps
-
-# Requires Bash version 4
+set -e
 
 declare -A APPS=(
   ["Gmail"]="https://gmail.com"
-  ["ThoughtWorks"]="https://thoughtworks.okta.com"
+  ["Medium"]="https://medium.com/"
   ["WorkFlowy"]="https://workflowy.com"
   ["YouTube"]="https://youtube.com"
 )
-
-DIR="$(dirname $(pwd))/.icons"
 
 for NAME in "${!APPS[@]}"; do
   if [ ! -d "/Applications/$NAME.app" ]; then
     echo -e "👷‍♀️  Installing $NAME"
   	pushd ~/Desktop
-    [[ $NAME = 'ThoughtWorks' ]] && ICON="--icon $DIR/$NAME.icns" || ICON=""
-  	nativefier --name $NAME $ICON ${APPS[$NAME]}
+  	nativefier --name $NAME ${APPS[$NAME]}
   	mv $NAME*/$NAME.app /Applications
   	rm -rf $NAME*
   	popd
