@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Close System Preferences to prevent overriding settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'

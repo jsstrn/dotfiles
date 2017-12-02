@@ -1,4 +1,4 @@
- #!/bin/bash
+#!/usr/bin/env bash
 
 # Upgrade to the latest and greatest version of NPM
 npm upgrade -g npm
