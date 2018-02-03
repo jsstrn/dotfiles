@@ -62,7 +62,6 @@ cask 'rowanj-gitx'
 cask 'shiftit'
 cask 'spotify'
 cask 'sublime-text'
-cask 'telegram'
 cask 'transmission'
 cask 'visual-studio-code'
 cask 'vlc'
@@ -89,6 +88,7 @@ cask 'font-source-serif-pro'
 mas '1Password', id: 443987910
 mas 'Airmail 3', id: 918858936
 mas 'Amphetamine', id: 937984704
+mas 'Bear', id: 1091189122
 mas 'Coinverter – The Currency Converter', id: 926121450
 mas 'Fantastical 2', id: 975937182
 mas 'Keynote', id: 409183694
@@ -96,12 +96,15 @@ mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
 mas 'Pocket', id: 568494494
 mas 'Skitch', id: 425955336
+mas 'Telegram', id: 747648890
 mas 'Todoist: Organize your life', id: 585829637
 mas 'Tomato One - Free Focus Timer', id: 907364780
 mas 'Trello', id: 1278508951
 mas 'Twitter', id: 409789998
 mas 'Unsplash Wallpapers', id: 1284863847
 mas 'Vim Options', id: 916688914
+mas 'WhatsApp Desktop', id: 1147396723
+
 # Optionals
 
 # Programming languages
