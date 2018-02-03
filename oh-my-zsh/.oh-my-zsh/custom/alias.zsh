@@ -20,6 +20,7 @@ alias ffde="open -a /Applications/FirefoxDeveloperEdition.app"
 alias safari="open -a safari"
 
 # Git aliases
+alias g="git"
 alias gap="git add --patch"
 alias gb="git branch"
 alias gcm="git commit -m"
@@ -33,7 +34,7 @@ alias gpr="git pull --rebase"
 alias gs="git stash"
 alias gsp="git stash pop"
 alias gst="git status"
-alias gsps="gs && gpr && gsp"
+alias gup="gs && gpr && gsp"
 
 # Lock the computer by putting the display to sleep immediately
 function lock {
