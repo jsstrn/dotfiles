@@ -1,14 +1,13 @@
 # Aliases
 
-alias a.="atom ."
-alias s.="subl ."
+alias a="atom"
+alias s="subl"
 
 alias omz="subl ~/.oh-my-zsh"
 alias zshrc="subl ~/.zshrc"
 
 alias weather="curl wttr.in"
 alias wtf="fuck"
-alias beer="brew update && brew upgrade && brew cleanup && brew cask cleanup"
 alias addkey="ssh-add -K ~/.ssh/id_rsa"
 alias ip="ipconfig getifaddr en0" # get IP address of your computer
 
@@ -34,15 +33,25 @@ alias gpr="git pull --rebase"
 alias gs="git stash"
 alias gsp="git stash pop"
 alias gst="git status"
-alias gup="gs && gpr && gsp"
+alias gun="git reset --soft HEAD~1" # short for git uncommit
+alias gup="gs && gpr && gsp" # short for git update
 
 # Lock the computer by putting the display to sleep immediately
-function lock {
+lock() {
   pmset displaysleepnow
 }
 
+# Update all brew formulas
+beer() {
+  brew update
+  brew upgrade
+  brew cask outdated | xargs brew cask reinstall
+  brew cleanup
+  brew cask cleanup
+}
+
 # Turn on/off your wifi (usage: wifi on)
-function wifi {
+wifi() {
   case $1 in
     'on' | 'off' )
       networksetup -setairportpower en0 $1
@@ -59,17 +68,13 @@ function wifi {
 }
 
 # Check what's running on a specific port number (usage: $ port 8080)
-function port {
+port() {
   lsof -n -i4TCP:$1 | grep LISTEN
 }
 
-# Find process id of a given app (usage: getPid node or getpid node)
-function getPid {
+# Find process id of a given app (usage: $ pid node)
+pid() {
   ps ax | grep $1
-}
-
-function getpid {
-  getPid
 }
 
 echo -e "\n🚀  Setting up your aliases\n"

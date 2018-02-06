@@ -38,6 +38,7 @@ cask 'backuploupe'
 cask 'bartender'
 cask 'calibre'
 cask 'dash'
+cask 'docker'
 cask 'firefox'
 cask 'firefoxdeveloperedition'
 cask 'fliqlo'
@@ -115,7 +116,6 @@ mas 'WhatsApp Desktop', id: 1147396723
 
 # Tools
 # brew 'ansible'
-# cask 'docker'
 # cask 'insomnia'
 # cask 'vagrant'
 # cask 'virtualbox'
