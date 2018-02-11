@@ -7,4 +7,4 @@ export GOPATH=$HOME/Developer/go
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PATH=$PATH:$(go env GOPATH)/bin
 
-echo -e "\n🌳  Setting up your environment variables\n"
+echo -e "🌳  Done setting up your environment variables"

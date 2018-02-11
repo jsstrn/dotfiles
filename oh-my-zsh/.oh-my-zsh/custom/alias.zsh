@@ -77,4 +77,4 @@ pid() {
   ps ax | grep $1
 }
 
-echo -e "\n🚀  Setting up your aliases\n"
+echo -e "📝  Done setting up your aliases"
