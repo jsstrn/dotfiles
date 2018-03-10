@@ -50,6 +50,7 @@ cask 'google-chrome'
 cask 'gpgtools'
 cask 'hammerspoon'
 cask 'handbrake'
+cask 'intellij-idea'
 cask 'iterm2'
 cask 'itsycal'
 cask 'keepassx'
@@ -122,23 +123,12 @@ mas 'WhatsApp Desktop', id: 1147396723
 # cask 'virtualbox'
 # brew 'yarn'
 
-# Databases
+# Database tools
 # cask 'pgadmin4'
 # cask 'postgres'
 # brew 'postgresql'
 # brew 'sqlite'
 # cask 'sqlitebrowser'
-
-# Jetbrains
-# cask 'appcode'
-# cask 'clion'
-# cask 'datagrip'
-# cask 'gogland'
-# cask 'intellij-idea'
-# cask 'phpstorm'
-# cask 'pycharm'
-# cask 'rubymine'
-# cask 'webstorm'
 
 # Applications
 # mas 'aText', id: 488566438 # install aText from Mac App Store to transfer license
