@@ -3,6 +3,7 @@
 set -e
 
 declare -A APPS=(
+  ["DevDocs"]="https://devdocs.io/"
   ["Gmail"]="https://gmail.com"
   ["Medium"]="https://medium.com/"
   ["WorkFlowy"]="https://workflowy.com"
