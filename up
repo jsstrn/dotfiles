@@ -9,22 +9,22 @@ function createDirectories {
 	.scripts/dir.sh
 }
 
-function installApplications {
+function installApps {
 	display '🎱  Installing applications'
 	.scripts/install.sh
 }
 
-function installNPM {
+function installNpm {
 	display '📦  Installing npm packages globally'
 	.scripts/install-npm.sh
 }
 
-function installCustom {
+function installCustomApps {
 	display '🤔  Installing custom applications'
 	.scripts/install-apps.sh
 }
 
-function macOSPreferences {
+function setupMacOsPref {
 	display '🔧  Tweaking macOS preferences'
 	.scripts/macos.sh
 }
@@ -45,11 +45,11 @@ function applyGitIgnore {
 }
 
 function mackupRestore {
-	display '🎨  Restoring from Mackup\n'
+	display '🎨  Restoring from Mackup'
 	mackup restore
 }
 
-function generateSSHKey {
+function generateSshKey {
 	display '🔑  Generating ssh key'
 	.scripts/ssh.sh
 }
@@ -66,15 +66,15 @@ function restartComputer {
 
 function runAll {
 	createDirectories
-	installApplications
-	installNPM
-	installCustom
-	macOSPreferences
+	installApps
+	installNpm
+	installCustomApps
+	setupMacOsPref
 	loginItems
 	stowFiles
 	applyGitIgnore
 	mackupRestore
-	generateSSHKey
+	generateSshKey
 	scheduleCron
 	restartComputer
 }
@@ -82,6 +82,12 @@ function runAll {
 cat banner
 
 case $1 in
+	apps )
+		installApps
+		;;
+	custom )
+		installCustomApps
+		;;
 	stow )
 		stowFiles
 		;;
@@ -89,7 +95,9 @@ case $1 in
 		runAll
 		;;
 	* )
-		echo -e "usage: up all	- run all commands"
-		echo -e "usage: up stow	- just run the stow command"
+		echo -e "usage:"
+		echo -e "	up custom	- install custom apps with nativefier"
+		echo -e "	up stow		- stow files"
+		echo -e "	up all		- run all commands"
 		;;
 esac
