@@ -4,6 +4,7 @@ set -e
 
 declare -A APPS=(
   ["DevDocs"]="https://devdocs.io/"
+  ["Feeder"]="https://feeder.co/"
   ["Medium"]="https://medium.com/"
 )
 
