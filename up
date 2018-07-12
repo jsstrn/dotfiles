@@ -79,6 +79,14 @@ function runAll {
 	restartComputer
 }
 
+function menu {
+	echo -e "usage:"
+	echo -e "	./up apps - install apps"
+	echo -e "	./up custom - install custom apps with nativefier"
+	echo -e "	./up stow - stow files"
+	echo -e "	./up all - run all commands"
+}
+
 cat banner
 
 case $1 in
@@ -94,10 +102,10 @@ case $1 in
 	all )
 		runAll
 		;;
+	help )
+		menu
+		;;
 	* )
-		echo -e "usage:"
-		echo -e "	up custom	- install custom apps with nativefier"
-		echo -e "	up stow		- stow files"
-		echo -e "	up all		- run all commands"
+		menu
 		;;
 esac
