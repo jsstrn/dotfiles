@@ -17,7 +17,6 @@ brew 'mackup'
 brew 'mas'
 brew 'node'
 brew 'nyancat'
-brew 'pass'
 brew 'ruby'
 brew 'stow'
 brew 'thefuck'
@@ -46,7 +45,6 @@ cask 'firefoxdeveloperedition'
 cask 'fliqlo'
 cask 'fluor'
 cask 'flux'
-cask 'franz'
 cask 'google-chrome'
 cask 'gpgtools'
 cask 'hammerspoon'
@@ -57,13 +55,14 @@ cask 'itsycal'
 cask 'keepassx'
 cask 'keybase'
 cask 'keycastr'
+cask 'kindle'
 cask 'launchcontrol'
 cask 'macdown'
 cask 'micro-snitch'
 cask 'nordvpn'
-cask 'notion'
 cask 'rowanj-gitx'
 cask 'shiftit'
+cask 'slack'
 cask 'spotify'
 cask 'sublime-text'
 cask 'transmission'
@@ -92,8 +91,8 @@ cask 'font-source-serif-pro'
 mas '1Password', id: 443987910
 mas 'Airmail 3', id: 918858936
 mas 'Amphetamine', id: 937984704
-mas 'Bear', id: 1091189122
 mas 'Coinverter – The Currency Converter', id: 926121450
+mas 'Enpass', id: 732710998
 mas 'Fantastical 2', id: 975937182
 mas 'Keynote', id: 409183694
 mas 'Numbers', id: 409203825
@@ -101,7 +100,6 @@ mas 'Pages', id: 409201541
 mas 'Pocket', id: 568494494
 mas 'Skitch', id: 425955336
 mas 'Telegram', id: 747648890
-mas 'Todoist: Organize your life', id: 585829637
 mas 'Tomato One - Free Focus Timer', id: 907364780
 mas 'Trello', id: 1278508951
 mas 'Twitter', id: 409789998
