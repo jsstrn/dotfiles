@@ -4,6 +4,7 @@ tap 'homebrew/services'
 tap 'caskroom/cask'
 tap 'caskroom/fonts'
 tap 'caskroom/versions'
+tap 'mongodb/brew'
 
 ## Core utilities
 brew 'antigen'
@@ -42,11 +43,14 @@ cask 'nordvpn'
 cask 'rowanj-gitx'
 cask 'transmission'
 cask 'vlc'
+cask 'zoomus'
 
 ## Browsers
-cask 'google-chrome'
+cask 'chromium'
 cask 'firefox'
-# cask 'firefox-developer-edition'
+cask 'firefox-developer-edition'
+cask 'google-chrome'
+cask 'vivaldi'
 
 ## Text editors and IDEs
 cask 'visual-studio-code'
@@ -62,6 +66,7 @@ brew 'ruby'
 brew 'node'
 # brew 'elixir'
 # cask 'java'
+# brew 'kotlin'
 # brew 'golang'
 
 ## Developer tools
@@ -72,6 +77,7 @@ cask 'insomnia'
 # cask 'virtualbox'
 
 ## Database tools
+brew 'mongodb-community'
 # brew 'postgresql'
 # brew 'sqlite'
 # cask 'pgadmin4'
@@ -118,5 +124,5 @@ mas '1Password', id: 443987910
 
 ## Commmunication
 mas 'Telegram', id: 747648890
-# mas 'Slack' id: 803453959
+mas 'Slack' id: 803453959
 # mas 'WhatsApp Desktop', id: 1147396723
