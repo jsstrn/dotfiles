@@ -50,6 +50,7 @@ cask 'chromium'
 cask 'firefox'
 cask 'firefox-developer-edition'
 cask 'google-chrome'
+cask 'tor-browser'
 cask 'vivaldi'
 
 ## Text editors and IDEs
