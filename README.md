@@ -2,9 +2,13 @@
 
 These be the dotfiles. Get a fresh Mac up and running in less time than it takes to do it manually.
 
-## Usage
+## Format your machine
 
-Follow these steps if you need to [format your machine and reinstall macOS](https://support.apple.com/en-us/HT204904).
+To erase (format) your machine, restart your computer in macOS recovery mode, then select **Disk Utility**. After erasing your disk, select **Reinstall macOS**.
+
+Read how to [format your machine and reinstall macOS](https://support.apple.com/en-us/HT204904).
+
+## Usage
 
 Clone the repository
 
