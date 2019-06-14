@@ -6,9 +6,9 @@ These be the dotfiles. Get a fresh Mac up and running in less time than it takes
 
 ![](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macos/highsierra/macos-high-sierra-recovery-mode-reinstall.jpg)
 
-Follow these steps to format your machine and install the latest macOS that is compatible with your machine
+Follow these steps to format your disk and reinstall macOS
 
-- Restart your machine in macOS recovery mode
+- Restart your machine in **macOS recovery mode**
 - Select **Disk Utility** and erase your disk
 - Select **Reinstall macOS**
 
@@ -16,13 +16,15 @@ Follow these steps to format your machine and install the latest macOS that is c
 
 ### macOS recovery mode
 
-Use one of these shortcuts to reboot your machine in macOS recovery mode
+Use one of these shortcuts to reboot your machine in macOS recovery mode.
 
 |Shortcut |Details |
 |---|---|
 |<kbd>Command</kbd> + <kbd>R</kbd> | Install the latest macOS that was installed on your Mac |
 |<kbd>Option</kbd> + <kbd>Command</kbd> + <kbd>R</kbd> | Upgrade to the latest macOS compatible with your Mac |
 |<kbd>Shift</kbd> + <kbd>Option</kbd> + <kbd>R</kbd> | Install the macOS that came with your Mac, or the closest version still available |
+
+❗️ We recommend using <kbd>Option</kbd> + <kbd>Command</kbd> + <kbd>R</kbd> to get the latest macOS.
 
 For more information, you can read how to [format your machine and reinstall macOS](https://support.apple.com/en-us/HT204904).
 
