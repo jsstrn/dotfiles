@@ -1,6 +1,5 @@
 cask_args appdir: '/Applications'
 
-tap 'homebrew/cask-cask'
 tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'mongodb/brew'
