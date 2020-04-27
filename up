@@ -67,6 +67,7 @@ function restartComputer {
 function runAll {
 	createDirectories
 	stowFiles
+	source ~/.zshrc
 	installApps
 	# installNpm
 	# installCustomApps
