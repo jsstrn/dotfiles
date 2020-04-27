@@ -79,4 +79,4 @@ pid() {
   ps ax | grep $1
 }
 
-echo -e "📝  Aliases are ready"
+echo -e "\n📝  Aliases are ready\n"
