@@ -1,17 +1,15 @@
 #!/usr/bin/env bash
 
-# Upgrade to the latest and greatest version of NPM
+# Upgrade to the latest and greatest version of npm
 npm upgrade -g npm
 
 PACKAGES=(
-	create-react-app
-	create-react-native-app
-	http-server
 	json-server
 	n
 	nativefier
 	netlify-cli
 	npm-check-updates
+	serve
 )
 
 # Installing NPM packages globally
