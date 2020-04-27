@@ -36,6 +36,7 @@ cask 'micro-snitch'
 cask 'nordvpn'
 cask 'rowanj-gitx'
 cask 'transmission'
+cask 'veracrypt'
 cask 'vlc'
 cask 'zoomus'
 
