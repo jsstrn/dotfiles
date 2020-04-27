@@ -8,7 +8,6 @@ tap 'mongodb/brew'
 
 ## Core utilities
 brew 'antigen'
-brew 'bash'
 brew 'coreutils'
 brew 'dos2unix'
 brew 'ffmpeg'
@@ -18,14 +17,11 @@ brew 'mackup'
 brew 'mas'
 brew 'nyancat'
 brew 'stow'
-brew 'thefuck'
 brew 'tmux'
 brew 'trash'
 brew 'tree'
 brew 'vim'
-brew 'youtube-dl'
 brew 'z'
-brew 'zsh'
 
 ## Utilities
 cask 'alfred'
@@ -51,8 +47,8 @@ cask 'chromium'
 cask 'firefox'
 cask 'firefox-developer-edition'
 cask 'google-chrome'
-cask 'tor-browser'
-cask 'vivaldi'
+# cask 'tor-browser'
+# cask 'vivaldi'
 
 ## Text editors and IDEs
 cask 'visual-studio-code'
@@ -79,7 +75,7 @@ cask 'insomnia'
 # cask 'virtualbox'
 
 ## Database tools
-brew 'mongodb-community'
+# brew 'mongodb-community'
 # brew 'postgresql'
 # brew 'sqlite'
 # cask 'pgadmin4'
@@ -107,8 +103,8 @@ cask 'font-source-serif-pro'
 ## Apps
 mas 'Amphetamine' id: 937984704
 mas 'Magnet' id: 441258766
-mas 'Trello', id: 1278508951
 mas 'Unsplash Wallpapers', id: 1284863847
+mas 'Cursor Pro', id: 1447043133
 
 ## Password management
 mas '1Password', id: 443987910
@@ -116,9 +112,9 @@ mas '1Password', id: 443987910
 # mas 'Enpass' id: 732710998
 
 ## Office suite
-# mas 'Keynote', id: 409183694
-# mas 'Numbers', id: 409203825
-# mas 'Pages', id: 409201541
+mas 'Keynote', id: 409183694
+mas 'Numbers', id: 409203825
+mas 'Pages', id: 409201541
 
 ## Media editing
 # mas 'Final Cut Pro', 424389933
