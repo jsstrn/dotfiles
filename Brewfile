@@ -101,8 +101,8 @@ cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
 ## Apps
-mas 'Amphetamine' id: 937984704
-mas 'Magnet' id: 441258766
+mas 'Amphetamine', id: 937984704
+mas 'Magnet', id: 441258766
 mas 'Unsplash Wallpapers', id: 1284863847
 mas 'Cursor Pro', id: 1447043133
 
