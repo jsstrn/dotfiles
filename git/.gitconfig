@@ -12,6 +12,7 @@
 	co = checkout
 	st = status
 	amend = commit --amend
+	discard = checkout -- .
 	last = log -1 HEAD
 	latest = log -1 HEAD
 	unstage = reset HEAD --
