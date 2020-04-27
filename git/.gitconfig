@@ -6,3 +6,14 @@
 [core]
 	quotepath = false
 	excludesfile = ~/.gitignore
+[alias]
+	br = branch
+	cm = commit -m
+	co = checkout
+	st = status
+	amend = commit --amend
+	last = log -1 HEAD
+	latest = log -1 HEAD
+	unstage = reset HEAD --
+	uncommit = reset --soft HEAD~1
+	update = !git stash && git pull --rebase && git stash pop
