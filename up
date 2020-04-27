@@ -44,11 +44,6 @@ function applyGitIgnore {
 	git config core.excludesfile ~/.gitignore
 }
 
-function mackupRestore {
-	display '🎨  Restoring from Mackup'
-	mackup restore
-}
-
 function generateSshKey {
 	display '🔑  Generating ssh key'
 	.scripts/ssh.sh
@@ -74,7 +69,6 @@ function runAll {
 	setupMacOsPref
 	loginItems
 	applyGitIgnore
-	mackupRestore
 	# generateSshKey
 	scheduleCron
 	restartComputer
