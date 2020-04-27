@@ -122,5 +122,5 @@ mas 'Pages', id: 409201541
 
 ## Commmunication
 mas 'Telegram', id: 747648890
-mas 'Slack' id: 803453959
+mas 'Slack', id: 803453959
 # mas 'WhatsApp Desktop', id: 1147396723
