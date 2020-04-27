@@ -66,12 +66,12 @@ function restartComputer {
 
 function runAll {
 	createDirectories
+	stowFiles
 	installApps
 	# installNpm
 	# installCustomApps
 	setupMacOsPref
 	loginItems
-	stowFiles
 	applyGitIgnore
 	mackupRestore
 	# generateSshKey
