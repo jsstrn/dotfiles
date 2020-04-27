@@ -26,9 +26,3 @@ brew upgrade
 
 # Check and installs dependencies in Brewfile
 brew bundle check || brew bundle install
-
-# Install Oh My Zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-# Change shell to Zsh
-chsh -s $(which zsh)
