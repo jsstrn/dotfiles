@@ -15,9 +15,6 @@ brew doctor || exit $?
 # Update Homebrew
 brew update
 
-# Install Homebrew Bundle
-brew tap 'homebrew/bundle'
-
 # List dependencies to uninstall, apend --force to actually uninstall
 brew bundle cleanup # --force
 
