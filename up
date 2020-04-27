@@ -67,8 +67,8 @@ function restartComputer {
 function runAll {
 	createDirectories
 	installApps
-	installNpm
-	installCustomApps
+	# installNpm
+	# installCustomApps
 	setupMacOsPref
 	loginItems
 	stowFiles
