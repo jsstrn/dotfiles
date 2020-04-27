@@ -56,7 +56,7 @@ cask 'visual-studio-code'
 # cask 'sublime-text'
 # cask 'intellij-idea'
 # cask 'intellij-idea-ce'
-# mas 'Xcode', 497799835
+# mas 'Xcode', id: 497799835
 
 ## Programming languages
 brew 'python'
@@ -108,8 +108,8 @@ mas 'Cursor Pro', id: 1447043133
 
 ## Password management
 mas '1Password', id: 443987910
-# mas 'Bitwarden' id: 1352778147
-# mas 'Enpass' id: 732710998
+# mas 'Bitwarden', id: 1352778147
+# mas 'Enpass', id: 732710998
 
 ## Office suite
 mas 'Keynote', id: 409183694
@@ -117,8 +117,8 @@ mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
 
 ## Media editing
-# mas 'Final Cut Pro', 424389933
-# mas 'Logic Pro X', 634148309
+# mas 'Final Cut Pro', id: 424389933
+# mas 'Logic Pro X', id: 634148309
 
 ## Commmunication
 mas 'Telegram', id: 747648890
