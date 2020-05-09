@@ -4,10 +4,7 @@
 npm upgrade -g npm
 
 PACKAGES=(
-	json-server
 	n
-	nativefier
-	netlify-cli
 	npm-check-updates
 	serve
 )
