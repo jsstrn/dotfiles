@@ -31,9 +31,11 @@ cask 'fliqlo'
 cask 'fluor'
 cask 'iterm2'
 cask 'itsycal'
+cask 'karabiner-elements'
 cask 'keycastr'
 cask 'micro-snitch'
 cask 'nordvpn'
+cask 'protonvpn'
 cask 'rowanj-gitx'
 cask 'transmission'
 cask 'veracrypt'
@@ -49,19 +51,19 @@ cask 'google-chrome'
 # cask 'vivaldi'
 
 ## Text editors and IDEs
+cask 'intellij-idea-ce'
 cask 'visual-studio-code'
 # cask 'atom'
 # cask 'sublime-text'
 # cask 'intellij-idea'
-# cask 'intellij-idea-ce'
 # mas 'Xcode', id: 497799835
 
 ## Programming languages
+cask 'java'
 brew 'python'
 brew 'ruby'
 brew 'node'
 # brew 'elixir'
-# cask 'java'
 # brew 'kotlin'
 # brew 'golang'
 
@@ -121,4 +123,4 @@ mas 'Pages', id: 409201541
 ## Commmunication
 mas 'Telegram', id: 747648890
 mas 'Slack', id: 803453959
-# mas 'WhatsApp Desktop', id: 1147396723
+mas 'WhatsApp Desktop', id: 1147396723
