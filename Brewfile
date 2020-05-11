@@ -106,6 +106,7 @@ mas 'Amphetamine', id: 937984704
 mas 'Cursor Pro', id: 1447043133
 mas 'Magnet', id: 441258766
 mas 'Todoist', id: 585829637
+mas 'Tomato One', id: 907364780
 mas 'Unsplash Wallpapers', id: 1284863847
 
 ## Password management
