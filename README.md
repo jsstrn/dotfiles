@@ -2,17 +2,24 @@
 
 These be the dotfiles. Get a fresh Mac up and running in less time than it takes to do it manually.
 
-## Format your machine
+## Steps
 
-![](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macos/highsierra/macos-high-sierra-recovery-mode-reinstall.jpg)
+1. Check that your Brewfile is up to date and push any changes to this repository
+2. [Erase your disk](https://support.apple.com/en-us/HT208496) and [reinstall macOS](https://support.apple.com/en-us/HT204904)
+3. Clone this Git repository and run the scripts
+
+## Format your machine
 
 Follow these steps to format your disk and reinstall macOS
 
-- Restart your machine in **macOS recovery mode**
-- Select **Disk Utility** and erase your disk
-- Select **Reinstall macOS**
+1. Turn off your machine
+2. Hold on to <kbd>Option</kbd> + <kbd>Command</kbd> + <kbd>R</kbd> and turn your machine on
+3. Select **Disk Utility** and erase your disk
+4. Select **Reinstall macOS**
 
 ⚠️ You must reinstall to macOS Mojave or higher if you format your disk to APFS. Otherwise stick to Mac OS Extended for older macOS versions. 
+
+Follow these guides to [erase your disk](https://support.apple.com/en-us/HT208496) and [reinstall macOS](https://support.apple.com/en-us/HT204904)
 
 ### macOS recovery mode
 
@@ -21,12 +28,8 @@ Use one of these shortcuts to reboot your machine in macOS recovery mode.
 |Shortcut |Details |
 |---|---|
 |<kbd>Command</kbd> + <kbd>R</kbd> | Install the latest macOS that was installed on your Mac |
-|<kbd>Option</kbd> + <kbd>Command</kbd> + <kbd>R</kbd> | Upgrade to the latest macOS compatible with your Mac |
+|<kbd>Option</kbd> + <kbd>Command</kbd> + <kbd>R</kbd> | Upgrade to the latest macOS compatible with your Mac (recommended) |
 |<kbd>Shift</kbd> + <kbd>Option</kbd> + <kbd>R</kbd> | Install the macOS that came with your Mac, or the closest version still available |
-
-❗️ We recommend using <kbd>Option</kbd> + <kbd>Command</kbd> + <kbd>R</kbd> to get the latest macOS.
-
-For more information, you can read how to [format your machine and reinstall macOS](https://support.apple.com/en-us/HT204904).
 
 ## Usage
 
@@ -42,23 +45,35 @@ Change into the directory
 cd ~/.dotfiles
 ```
 
-Run the script
+Install all applications 
 
 ```
-./up
+./up apps
 ```
 
-## Setup
-
-### Generate a Brewfile
-
-A Brewfile lists all your Homebrew dependencies. To generate a Brewfile, just run:
+Stow all .dotfiles
 
 ```
+./up stow
+```
+
+## Brewfile
+
+A Brewfile lists all your Homebrew dependencies. 
+
+Generate a Brewfile by running the following command: 
+
+```bash
 brew bundle dump
 ```
 
-Adding `--force` will overwrite an existing Brewfile.
+If a Brewfile already exists, you can overwrite it by adding `--force`
+
+```bash
+brew bundle dump --force
+```
+
+You can search for Homebrew formulae on [https://formulae.brew.sh](https://formulae.brew.sh) 
 
 ## Appreciation
 
