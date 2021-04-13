@@ -63,7 +63,7 @@ cask 'visual-studio-code'
 # mas 'Xcode', id: 497799835
 
 ## Programming languages
-cask 'openjdk'
+brew 'openjdk'
 brew 'jenv'
 brew 'pyenv'
 brew 'python'
