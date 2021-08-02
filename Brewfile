@@ -51,18 +51,15 @@ cask 'oversight'
 # cask 'veracrypt'
 
 ## Browsers
-cask 'chromium'
 cask 'firefox'
 cask 'tor-browser'
 # cask 'chromium'
 # cask 'firefox-developer-edition'
 # cask 'google-chrome'
-# cask 'tor-browser'
 
 ## Editors
 cask 'intellij-idea-ce'
 cask 'visual-studio-code'
-# cask 'atom'
 # cask 'sublime-text'
 # cask 'intellij-idea'
 # mas 'Xcode', id: 497799835
@@ -91,10 +88,10 @@ cask 'insomnia'
 ## Database tools
 # cask 'beekeeper-studio'
 # brew 'mongodb-community'
-# brew 'postgresql'
-# brew 'sqlite'
 # cask 'pgadmin4'
+# brew 'postgresql'
 # cask 'postgres'
+# brew 'sqlite'
 # cask 'sqlitebrowser'
 
 ## QuickLook helpers
@@ -103,6 +100,10 @@ cask 'qlmarkdown'
 cask 'qlstephen'
 cask 'quicklook-json'
 cask 'quicklook-csv'
+cask 'qlimagesize'
+cask 'suspicious-package'
+cask 'apparency'
+cask 'qlvideo'
 
 ## Fonts
 cask 'font-hack'
@@ -117,10 +118,12 @@ cask 'font-source-sans-pro'
 ## Apps
 mas 'Amphetamine', id: 937984704
 mas 'Cursor Pro', id: 1447043133
+mas "Day One", id: 1055511498
 mas 'Magnet', id: 441258766
 mas 'Unsplash Wallpapers', id: 1284863847
 
 ## Password management
+cask 'gopass'
 mas '1Password', id: 443987910
 mas 'Enpass', id: 732710998
 
@@ -134,7 +137,7 @@ mas 'Pages', id: 409201541
 # mas 'Logic Pro X', id: 634148309
 
 ## Commmunication
-mas 'Telegram', id: 747648890
+cask 'discord'
 mas 'Slack', id: 803453959
+mas 'Telegram', id: 747648890
 mas 'WhatsApp Desktop', id: 1147396723
-
