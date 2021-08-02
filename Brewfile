@@ -89,6 +89,7 @@ cask 'insomnia'
 # cask 'virtualbox'
 
 ## Database tools
+# cask 'beekeeper-studio'
 # brew 'mongodb-community'
 # brew 'postgresql'
 # brew 'sqlite'
