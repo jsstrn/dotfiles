@@ -78,7 +78,7 @@ brew 'n'
 brew 'node'
 # brew 'elixir'
 # brew 'kotlin'
-# brew 'golang'
+brew 'go'
 
 ## Developer tools
 cask 'docker'
