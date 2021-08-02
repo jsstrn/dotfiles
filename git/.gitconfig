@@ -18,3 +18,5 @@
 	unstage = reset HEAD --
 	uncommit = reset --soft HEAD~1
 	update = !git stash && git pull --rebase && git stash pop
+[init]
+	defaultBranch = main
