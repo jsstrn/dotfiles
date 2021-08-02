@@ -6,6 +6,7 @@ tap 'mongodb/brew'
 
 ## Core utilities
 brew 'antigen'
+brew "awscli"
 brew 'coreutils'
 brew 'dos2unix'
 brew 'ffmpeg'
