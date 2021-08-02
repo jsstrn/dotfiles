@@ -53,6 +53,7 @@ cask 'oversight'
 ## Browsers
 cask 'chromium'
 cask 'firefox'
+cask 'tor-browser'
 # cask 'firefox-developer-edition'
 # cask 'google-chrome'
 # cask 'tor-browser'
