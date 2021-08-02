@@ -41,6 +41,7 @@ cask 'zoom'
 
 ## Security
 cask 'blockblock'
+cask 'cryptomator'
 cask 'do-not-disturb'
 cask 'knockknock'
 cask 'lulu'
