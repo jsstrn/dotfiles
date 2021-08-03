@@ -124,7 +124,7 @@ mas 'Magnet', id: 441258766
 mas 'Unsplash Wallpapers', id: 1284863847
 
 ## Password management
-cask 'gopass'
+brew 'gopass'
 mas '1Password', id: 443987910
 mas 'Enpass', id: 732710998
 
