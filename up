@@ -19,11 +19,6 @@ function installNpm {
 	.scripts/install-npm.sh
 }
 
-function installCustomApps {
-	display '🤔  Installing custom applications'
-	.scripts/install-apps.sh
-}
-
 function setupMacOsPref {
 	display '🔧  Tweaking macOS preferences'
 	.scripts/macos.sh
@@ -64,12 +59,10 @@ function runAll {
 	stowFiles
 	source ~/.zshrc
 	installApps
-	# installNpm
-	# installCustomApps
+	installNpm
 	setupMacOsPref
 	loginItems
 	applyGitIgnore
-	# generateSshKey
 	scheduleCron
 	restartComputer
 }
@@ -77,7 +70,7 @@ function runAll {
 function menu {
 	echo -e "usage:"
 	echo -e "	./up apps - install apps"
-	echo -e "	./up custom - install custom apps with nativefier"
+	echo -e "	./up ssh-key - set up ssh keys"
 	echo -e "	./up stow - stow files"
 	echo -e "	./up all - run all commands"
 }
@@ -88,8 +81,8 @@ case $1 in
 	apps )
 		installApps
 		;;
-	custom )
-		installCustomApps
+	ssh-key )
+		generateSshKey
 		;;
 	stow )
 		stowFiles
