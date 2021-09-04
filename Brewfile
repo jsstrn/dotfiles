@@ -13,7 +13,6 @@ brew 'ffmpeg'
 brew 'findutils'
 brew 'git'
 brew 'mas'
-brew 'nyancat'
 brew 'stow'
 brew 'svn'
 brew 'tmux'
@@ -23,6 +22,12 @@ brew 'vim'
 brew 'z'
 
 ## Utilities
+brew 'gh'
+brew 'hugo'
+brew 'nyancat'
+brew 'youtube-dl'
+
+## Applications
 cask 'alfred'
 cask 'appcleaner'
 cask 'bartender'
@@ -44,6 +49,8 @@ cask 'zoom'
 cask 'blockblock'
 cask 'cryptomator'
 cask 'do-not-disturb'
+cask 'gpg-suite-no-mail'
+cask 'keybase'
 cask 'knockknock'
 cask 'lulu'
 cask 'nordvpn'
@@ -66,17 +73,18 @@ cask 'visual-studio-code'
 # mas 'Xcode', id: 497799835
 
 ## Programming languages
-brew 'openjdk'
+# brew 'elixir'
+brew 'go'
 brew 'jenv'
+# brew 'kotlin'
+brew 'openjdk'
+brew 'n'
+brew 'node'
 brew 'pyenv'
 brew 'python'
 brew 'rbenv'
 brew 'ruby'
-brew 'n'
-brew 'node'
-# brew 'elixir'
-# brew 'kotlin'
-brew 'go'
+
 
 ## Developer tools
 cask 'docker'
@@ -124,9 +132,11 @@ mas 'Magnet', id: 441258766
 mas 'Unsplash Wallpapers', id: 1284863847
 
 ## Password management
-brew 'gopass'
+brew 'pass'
 mas '1Password', id: 443987910
+mas 'Bitwarden', id: 1352778147
 mas 'Enpass', id: 732710998
+mas 'Obsidian Authenticator App', id: 1191757556
 
 ## Office suite
 mas 'Keynote', id: 409183694
