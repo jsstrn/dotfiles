@@ -33,7 +33,13 @@ Use one of these shortcuts to reboot your machine in macOS recovery mode.
 
 ## Usage
 
-Clone the repository
+Install Xcode command line tools
+
+```sh
+xcode-select --install
+```
+
+Clone this repository
 
 ```
 git clone https://github.com/jsstrn/dotfiles.git ~/.dotfiles
@@ -51,7 +57,7 @@ Install all applications
 ./up apps
 ```
 
-Stow all .dotfiles
+Install all .dotfiles
 
 ```
 ./up stow
