@@ -23,3 +23,11 @@ brew upgrade
 
 # Check and installs dependencies in Brewfile
 brew bundle check || brew bundle install
+
+# Switch to zsh shell
+if ! echo $SHELL | grep zsh; then
+	chsh -s $(which zsh)
+fi
+
+# Remove quarantine attributes so Quick Look plugins work in macOS Catalina
+xattr -d -r com.apple.quarantine ~/Library/QuickLook
