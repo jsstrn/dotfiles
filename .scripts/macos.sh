@@ -39,7 +39,7 @@ defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 defaults write com.apple.menuextra.clock DateFormat -string "h:mm a"
 
 # Dock: place dock on the right
-defaults write com.apple.dock orientation -string "right"
+defaults write com.apple.dock orientation -string "bottom"
 
 # Dock: automatically hide the dock
 defaults write com.apple.dock autohide -bool true
