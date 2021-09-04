@@ -6,10 +6,9 @@ npm upgrade -g npm
 PACKAGES=(
 	n
 	npm-check-updates
-	serve
 )
 
-# Installing NPM packages globally
+# Installing npm packages globally
 for package in "${PACKAGES[@]}" ; do
 	if ! npm list -g $package ; then
 		npm install -g $package
