@@ -21,3 +21,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting # must be the last plugin
 
 # Apply changes
 antigen apply
+
+# Added by serverless binary installer
+export PATH="$HOME/.serverless/bin:$PATH"
+[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
