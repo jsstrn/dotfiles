@@ -25,6 +25,7 @@ brew 'z'
 brew 'gh'
 brew 'hugo'
 brew 'nyancat'
+brew 'starship'
 brew 'youtube-dl'
 
 ## Applications
